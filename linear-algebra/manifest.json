@@ -1,0 +1,55 @@
+{
+  "title": "Lineare Algebra für D-BAUG — Kapitel 1–5",
+  "author": "Menny Akka Ginosar",
+  "snapshot_date": "2026-10-30",
+  "filename": "LA-BAUG-Kapitel-1-5-2026-10-30.pdf",
+  "sha256": "3cf2d0e79a213f08aaddba2c0aa2f9cfe8ab99b81c2118acabf7b99cb7ed473b",
+  "git_blob_sha": "e6860fe517e9f281635263882ddf48090cf26b75",
+  "pdf_pages": 121,
+  "section_pages": {
+    "chapter.1": {
+      "pdf_page": 4,
+      "printed_page": "1"
+    },
+    "chapter.2": {
+      "pdf_page": 38,
+      "printed_page": "35"
+    },
+    "chapter.3": {
+      "pdf_page": 57,
+      "printed_page": "54"
+    },
+    "chapter.4": {
+      "pdf_page": 68,
+      "printed_page": "65"
+    },
+    "chapter.5": {
+      "pdf_page": 87,
+      "printed_page": "84"
+    },
+    "section.5.1": {
+      "pdf_page": 87,
+      "printed_page": "84"
+    },
+    "section.5.2": {
+      "pdf_page": 97,
+      "printed_page": "94"
+    },
+    "section.5.3": {
+      "pdf_page": 103,
+      "printed_page": "100"
+    },
+    "section.5.4": {
+      "pdf_page": 107,
+      "printed_page": "104"
+    },
+    "section.5.5": {
+      "pdf_page": 115,
+      "printed_page": "112"
+    },
+    "section.5.6": {
+      "pdf_page": 119,
+      "printed_page": "116"
+    }
+  }
+}
