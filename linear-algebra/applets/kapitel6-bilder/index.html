@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Bekannte Bilder · Lineare Algebra</title><style>
+:root{--ink:#183b3a;--muted:#5b6c6b;--accent:#066a68;--paper:#f5f7f5;--line:#d6e1dc;--violet:#793b8d;--danger:#9d3131}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:#253b3b;font:17px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:930px;margin:0 auto;padding:42px 26px 30px}header{margin-bottom:28px}h1{font-size:clamp(1.8rem,4vw,2.65rem);letter-spacing:-.035em;color:var(--ink);line-height:1.15;margin:9px 0 12px}h2{font-size:1.45rem;line-height:1.3;letter-spacing:-.02em;margin:5px 0 14px}.eyebrow{font-size:.73rem;font-weight:750;letter-spacing:.12em;color:var(--accent);margin:0}.lead{color:var(--muted);max-width:680px;margin:0}.tabs{display:flex;gap:8px;margin:0 0 18px;flex-wrap:wrap}button,select,input,textarea{font:inherit}button{cursor:pointer;border:1px solid var(--accent);border-radius:9px;background:var(--accent);color:white;padding:10px 16px;line-height:1.35;font-weight:620}button:hover{filter:brightness(.94)}button:focus-visible,summary:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #b07dc0;outline-offset:3px}.tabs button{border-color:var(--line);background:transparent;color:var(--muted);font-size:.95rem}.tabs button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}.exercise{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px 30px;box-shadow:0 4px 20px #173a3210}.toolbar{display:flex;justify-content:space-between;gap:14px;align-items:end;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:24px}.toolbar label{font-size:.8rem;color:var(--muted);flex:1;max-width:490px}select{width:100%;display:block;margin-top:5px;border:1px solid #b6c8c1;border-radius:7px;background:white;padding:8px;color:#183b3a}.quiet{background:white;color:var(--accent);white-space:nowrap;font-size:.9rem}p{margin:10px 0 16px}.givens{display:flex;gap:18px 35px;flex-wrap:wrap;margin:22px 0 13px}.given{display:flex;align-items:center;gap:10px;padding:8px 0}.math{font-family:"Cambria Math",Cambria,"Times New Roman",serif;font-size:1.13em}.vec{display:inline-grid;border-left:1.6px solid currentColor;border-right:1.6px solid currentColor;border-radius:10px;padding:2px 8px;line-height:1.4;vertical-align:middle;text-align:center;min-width:30px;margin:0 3px}.matrix{display:inline-flex;border-left:1.7px solid currentColor;border-right:1.7px solid currentColor;border-radius:10px;padding:4px 8px;vertical-align:middle;margin:4px}.matrix table{border-collapse:collapse}.matrix td{text-align:center;padding:2px 10px;min-width:28px}.matrix td.aug{border-left:1px solid #748b87}.small{font-size:.8rem;color:var(--muted);margin-top:0}.question{border-top:1px solid var(--line);padding-top:19px;margin-top:18px;margin-bottom:18px;font-weight:650}.question .math{font-weight:400}.answers{display:flex;flex-wrap:wrap;gap:9px}.answers button{background:#eef7f4;color:var(--ink);border-color:#b3cec5;font-size:.95rem;padding:10px 13px}.answers button.selected{background:var(--ink);color:white}.textbutton{color:var(--muted);background:none;border:0;padding:8px 0;margin-top:10px;font-size:.85rem;text-align:left;text-decoration:underline;text-underline-offset:3px}#result{margin-top:24px;border-top:1px solid var(--line);padding-top:22px}.feedback{border-left:4px solid var(--accent);padding:6px 0 6px 15px;margin:0 0 20px}.feedback.wrong{border-color:var(--violet)}.feedback strong{display:block;color:var(--ink);margin-bottom:5px}.result-line{margin:20px 0;padding:12px 16px;background:#f2f7f4;border-radius:8px;overflow-x:auto}.calculation{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:13px 0}.mathblock{overflow-x:auto;padding:7px 1px}.details-list details{border-top:1px solid var(--line);padding:14px 0}.details-list details:last-child{padding-bottom:0}summary{cursor:pointer;font-weight:650;color:var(--ink)}details p{margin:12px 0}.gauss-step{padding:12px 0;border-bottom:1px dashed var(--line)}.gauss-step:last-child{border:0}.gauss-step p{color:var(--muted);font-size:.9rem;margin:0}.editor{margin-top:18px;padding:17px 20px;background:#fff;border:1px solid var(--line);border-radius:12px;font-size:.9rem}.editor>summary{font-size:.95rem}.dimensions{display:flex;gap:18px;margin:18px 0}.dimensions label{flex:1}.editor-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}input,textarea{width:100%;display:block;margin:5px 0 14px;padding:9px;border:1px solid #b6c8c1;border-radius:7px;background:#fcfdfb}textarea{font-family:ui-monospace,monospace;resize:vertical}.error{color:var(--danger);font-weight:650}.answer-input{display:flex;gap:10px;align-items:end;max-width:480px}.answer-input label{flex:1;font-size:.9rem}.answer-input input{margin-bottom:0}.answer-input button{font-size:.9rem}.number-feedback{font-size:.9rem;color:var(--accent)}footer{font-size:.8rem;color:var(--muted);margin:24px 4px}footer details{max-width:760px}footer summary{font-size:.85rem}footer p{margin:12px 0}code{font-size:.93em}@media(max-width:600px){body{font-size:16px}main{padding:24px 14px}.exercise{padding:19px 17px}.tabs{gap:6px}.tabs button{font-size:.81rem;padding:9px 10px}.toolbar{gap:10px;align-items:center}.toolbar .quiet{font-size:.8rem;padding:10px}.editor-grid{grid-template-columns:1fr}.givens{gap:8px 20px}.answers{flex-direction:column}.answers button{text-align:left}.matrix td{padding:2px 7px}.answer-input{align-items:stretch;flex-direction:column}.answer-input button{align-self:start}.dimensions{gap:12px}h2{font-size:1.3rem}.editor{padding:16px}}
+
+</style></head>
+<body><main>
+<header><p class="eyebrow">LINEARE ALGEBRA · KAPITEL 6.1.1 · ENTWURF</p><h1>Was bestimmen bekannte Bilder?</h1><p class="lead">Ein paar Bilder sind gegeben. Was folgt daraus für eine lineare Abbildung?</p></header>
+<nav class="tabs" aria-label="Aufgabentyp"><button data-mode="image" aria-pressed="true">Ein Bild</button><button data-mode="map" aria-pressed="false">Die ganze Abbildung</button><button data-mode="compatible" aria-pressed="false">Bilder vorgeben</button></nav>
+<section class="exercise" aria-labelledby="taskTitle">
+<div class="toolbar"><label for="preset">Beispiel<select id="preset"></select></label><button id="random" class="quiet">Neue Zahlen</button></div>
+<div class="task-heading"><p id="level" class="eyebrow"></p><h2 id="taskTitle"></h2></div>
+<p id="intro"></p><div id="givens" class="givens"></div><p class="small">Alle Vektoren sind Spaltenvektoren.</p>
+<div id="question" class="question"></div><div id="answers" class="answers" aria-label="Deine Antwort"></div>
+<button id="unsure" class="textbutton">Ich weiss es noch nicht – zeig mir den Weg</button>
+<div id="result" hidden aria-live="polite"></div>
+</section>
+<details class="editor"><summary>Eigene Vektoren und Bilder ausprobieren</summary><p>Eine Zeile pro Vektor. Trenne die Einträge mit Leerzeichen; Brüche wie <strong>1/2</strong> sind erlaubt.</p><div class="dimensions"><label>Ausgangsraum <select id="n"><option value="2">ℝ²</option><option value="3">ℝ³</option><option value="4">ℝ⁴</option></select></label><label>Zielraum <select id="m"><option value="1">ℝ</option><option value="2" selected>ℝ²</option><option value="3">ℝ³</option><option value="4">ℝ⁴</option></select></label></div>
+<div class="editor-grid"><label>Vektoren v₁, v₂, …<textarea id="vectors" rows="4" spellcheck="false"></textarea></label><label>Vorgegebene Bilder T(v₁), T(v₂), …<textarea id="images" rows="4" spellcheck="false"></textarea></label></div><label>Vektor x, dessen Bild dich interessiert<input id="target" spellcheck="false"></label><p id="inputError" class="error" role="alert"></p><button id="apply">Angaben übernehmen</button></details>
+<footer><p>Eine Frage nach der anderen. Die ausführliche Rechnung öffnest du nur, wenn du sie brauchst.</p><details><summary>Begriffe und Hinweise</summary><p><strong>Bekannte Bilder:</strong> Ist T bereits linear, berechnen wir Bilder im Spann mit denselben Koeffizienten. Die gegebenen Vektoren müssen dabei nicht unabhängig sein.</p><p><strong>Vorgegebene Bilder:</strong> Widersprüchliche Angaben können zu keiner linearen Abbildung gehören. Auf einer unabhängigen Liste darfst du die Bilder frei wählen; auf einer Basis bestimmen sie genau eine lineare Abbildung.</p><p>Die Rechnungen sind exakt. Hier wird mit Vektoren in ℝ², ℝ³ und ℝ⁴ gearbeitet. Das ist ein Übungsangebot zum Skript, keine zusätzliche Theorie.</p></details></footer>
+</main><script>
+/* Exact rational arithmetic; vectors are stored as columns. No network dependencies. */
+(function(root){
+'use strict';
+const gcd=(a,b)=>{a=a<0n?-a:a;b=b<0n?-b:b;while(b){[a,b]=[b,a%b];}return a||1n;};
+class Q{
+ constructor(n,d=1n){n=BigInt(n);d=BigInt(d);if(!d)throw Error('Nenner darf nicht null sein.');if(d<0n){n=-n;d=-d;}let g=gcd(n,d);this.n=n/g;this.d=d/g;}
+ add(b){return new Q(this.n*b.d+b.n*this.d,this.d*b.d);} neg(){return new Q(-this.n,this.d);} sub(b){return this.add(b.neg());} mul(b){return new Q(this.n*b.n,this.d*b.d);} div(b){return new Q(this.n*b.d,this.d*b.n);} eq(b){return this.n===b.n&&this.d===b.d;} zero(){return this.n===0n;} num(){return Number(this.n)/Number(this.d);} toString(){return this.d===1n?''+this.n:this.n+'/'+this.d;}
+}
+const q=x=>x instanceof Q?x:parse(String(x));
+function parse(s){s=s.trim().replace('−','-');if(!/^[+-]?\d{1,6}(?:\/\d{1,6}|\.\d{1,4})?$/.test(s))throw Error('Bitte Zahlen wie 2, -3, 1/2 oder 0.5 eingeben.');let a=s.split('/');if(a.length===2)return new Q(a[0],a[1]);if(s.includes('.')){let sign=s[0]==='-'?-1n:1n;s=s.replace(/^[+-]/,'');let [a,b]=s.split('.');return new Q(sign*BigInt(a+b),10n**BigInt(b.length));}return new Q(s);}
+const Z=()=>new Q(0),O=()=>new Q(1);
+const matrix=vs=>vs[0].map((_,i)=>vs.map(v=>q(v[i])));
+function rref(input,cols=input[0].length){let a=input.map(r=>r.map(q)),piv=[],steps=[{label:'Ausgangsmatrix',a:a.map(r=>r.slice())}],row=0;
+ const save=label=>steps.push({label,a:a.map(r=>r.slice())});
+ for(let c=0;c<cols&&row<a.length;c++){let j=a.findIndex((r,i)=>i>=row&&!r[c].zero());if(j<0)continue;
+  if(j!==row){[a[row],a[j]]=[a[j],a[row]];save(`L${row+1} ↔ L${j+1}`);}
+  let f=a[row][c];if(!f.eq(O())){a[row]=a[row].map(x=>x.div(f));save(`(1/(${f})) L${row+1} → L${row+1}`);}
+  for(let i=0;i<a.length;i++){if(i===row||a[i][c].zero())continue;let t=a[i][c];a[i]=a[i].map((x,k)=>x.sub(t.mul(a[row][k])));save(`L${i+1} − (${t}) L${row+1} → L${i+1}`);}
+  piv.push(c);row++;
+ }return {a,piv,rank:piv.length,steps};
+}
+function solve(vs,b){let a=matrix(vs),k=vs.length,res=rref(a.map((r,i)=>[...r,q(b[i])]),k);let ok=!res.a.some(r=>r.slice(0,k).every(x=>x.zero())&&!r[k].zero());let x=Array.from({length:k},Z);if(ok)res.piv.forEach((c,i)=>x[c]=res.a[i][k]);return {...res,ok,x};}
+function nullVector(vs){let {a,piv}=rref(matrix(vs)),k=vs.length;let f=Array.from({length:k},(_,i)=>i).find(i=>!piv.includes(i));if(f===undefined)return null;let x=Array.from({length:k},Z);x[f]=O();piv.forEach((c,i)=>x[c]=a[i][f].neg());return x;}
+const combine=(vs,c)=>vs[0].map((_,i)=>vs.reduce((s,v,j)=>s.add(q(v[i]).mul(q(c[j]))),Z()));
+const normal=n=>n===2?[q(-1),q(1)]:n===3?[q(1),q(-2),q(1)]:[q(1),q(1),q(1),q(1)];
+const belongs=(v,n)=>v.reduce((s,x,i)=>s.add(q(x).mul(normal(n)[i])),Z()).zero();
+function analyse(vs,b,space='ambient'){vs=vs.map(v=>v.map(q));let n=vs[0].length,k=vs.length,rr=rref(matrix(vs)),sol=solve(vs,b),nul=nullVector(vs),inside=space==='ambient'||vs.every(v=>belongs(v,n)),d=space==='ambient'?n:n-1;return {vs,n,k,rr,sol,nul,independent:rr.rank===k,inside,d,spans:inside&&rr.rank===d,basis:inside&&rr.rank===d&&rr.rank===k};}
+const api={Q,q,Z,O,parse,matrix,rref,solve,nullVector,combine,normal,belongs,analyse};root.LA=api;if(typeof module!=='undefined')module.exports=api;
+})(globalThis);
+
+/* Exact statements about maps with prescribed values. Vectors are columns. */
+(function(root){
+'use strict';
+const L=root.LA||(typeof require!=='undefined'?require('./math.js'):null);
+const {q,Z,O,matrix,rref,solve,combine}=L;
+const dot=(a,b)=>a.reduce((s,v,i)=>s.add(q(v).mul(q(b[i]))),Z());
+const mv=(A,x)=>A.map(row=>dot(row,x));
+function nullBasis(vs){const {a,piv}=rref(matrix(vs)),k=vs.length;return Array.from({length:k},(_,i)=>i).filter(i=>!piv.includes(i)).map(f=>{let x=Array.from({length:k},Z);x[f]=O();piv.forEach((c,i)=>x[c]=a[i][f].neg());return x;});}
+function analyse(vectors,images,target){
+ const vs=vectors.map(v=>v.map(q)),ws=images.map(v=>v.map(q)),x=target.map(q),n=vs[0].length,m=ws[0].length,k=vs.length;
+ if(k!==ws.length||vs.some(v=>v.length!==n)||ws.some(v=>v.length!==m)||x.length!==n)throw Error('Die Dimensionen passen nicht zusammen.');
+ const rank=rref(matrix(vs)).rank,relations=nullBasis(vs),bad=relations.find(c=>combine(ws,c).some(v=>!v.zero()));
+ const span=solve(vs,x),compatible=!bad;
+ const out={vs,ws,x,n,m,k,rank,relations,bad,compatible,span,independent:rank===k,unique:compatible&&rank===n};
+ if(!compatible){out.badImage=combine(ws,bad);return out;}
+ const eqcols=Array.from({length:n},(_,i)=>vs.map(v=>v[i]));
+ const A=Array.from({length:m},(_,j)=>solve(eqcols,ws.map(w=>w[j])).x);out.A=A;
+ if(span.ok)out.image=combine(ws,span.x);
+ else{
+  const h=nullBasis(eqcols).find(c=>!dot(c,x).zero());
+  if(!h)throw Error('Es fehlt ein Trennvektor.');
+  const normalized=h.map(v=>v.div(dot(h,x)));
+  out.A2=A.map((row,j)=>row.map((v,i)=>j===0?v.add(normalized[i]):v));
+  out.image1=mv(A,x);out.image2=mv(out.A2,x);out.h=normalized;
+ }
+ return out;
+}
+const api={...L,dot,mv,nullBasis,analyse};root.BI=api;if(typeof module!=='undefined')module.exports=api;
+})(globalThis);
+
+(function(){
+'use strict';
+const {q,Z,O,analyse,combine,mv,rref,matrix}=BI;
+const presets=[
+ {id:'standard',title:'Standardbasis in ℝ²',hint:'Zum Einstieg',vs:[[1,0],[0,1]],ws:[[1,2],[-1,1]],x:[3,1]},
+ {id:'basis',title:'Eine andere Basis in ℝ²',hint:'Wie im Skript',vs:[[1,1],[1,-1]],ws:[[1,2],[3,4]],x:[3,1]},
+ {id:'ebene',title:'Zwei Vektoren im ℝ³',hint:'Zwei bekannte Bilder',vs:[[1,0,1],[0,1,1]],ws:[[1,2],[-1,1]],x:[2,-1,1]},
+ {id:'ausserhalb',title:'Reichen diese Angaben?',hint:'Ein weiterer Vektor',vs:[[1,0,1],[0,1,1]],ws:[[1,2],[-1,1]],x:[0,0,1]},
+ {id:'abhaengig',title:'Zwei Vielfache',hint:'Reichen die Angaben?',vs:[[1,0],[2,0]],ws:[[1,2],[2,4]],x:[3,0]},
+ {id:'widerspruch',title:'Zwei Angaben im Vergleich',hint:'Vorgaben prüfen',vs:[[1,0],[2,0]],ws:[[1,0],[0,1]],x:[3,0]},
+ {id:'null',title:'Der Nullvektor unter den Angaben',hint:'Genau hinschauen',vs:[[0,0],[1,1]],ws:[[0,0],[2,-1]],x:[2,2]},
+ {id:'basis3',title:'Drei Basisvektoren in ℝ³',hint:'Eine ganze Abbildung',vs:[[1,0,1],[0,1,1],[0,0,1]],ws:[[1,2],[-1,1],[1,0]],x:[2,-1,3]},
+ {id:'vier',title:'Dasselbe im ℝ⁴',hint:'Die Rechnung bleibt gleich',vs:[[1,0,1,0],[0,1,0,1]],ws:[[2,1],[1,-1]],x:[2,-1,2,-1]}
+];
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const vec=v=>`<span class="vec" role="math" aria-label="Spaltenvektor ${v.map(String).join(', ')}">${v.map(x=>`<span>${esc(x)}</span>`).join('')}</span>`;
+const mat=(a,aug=false)=>`<span class="matrix math" role="math" aria-label="Matrix mit ${a.length} Zeilen und ${a[0].length} Spalten"><table aria-hidden="true">${a.map(r=>`<tr>${r.map((x,j)=>`<td${aug&&j===r.length-1?' class="aug"':''}>${esc(x)}</td>`).join('')}</tr>`).join('')}</table></span>`;
+const vi=i=>`v<sub>${i+1}</sub>`,ti=i=>`T(${vi(i)})`;
+const coef=c=>c.n<0n?`(${esc(c)})`:esc(c);
+const combo=(c,fn)=>c.map((a,i)=>`${coef(a)} · ${fn(i)}`).join(' + ');
+const dotExplain=(c,items)=>`<div class="calculation math">${combo(c,i=>vec(items[i]))}</div>`;
+function expression(row,vars){let terms=[];row.forEach((v,i)=>{if(v.zero())return;const neg=v.n<0n,abs=neg?v.neg():v;let val=abs.eq(O())?'':esc(abs)+' · ';terms.push((terms.length?(neg?' − ':' + '):(neg?'−':''))+val+vars[i]);});return terms.join('')||'0';}
+function formula(A){const vars=['x','y','z','t'].slice(0,A[0].length);return `<div class="calculation math">T${vec(vars)} = ${vec(A.map(r=>expression(r,vars))).replaceAll('&lt;','<').replaceAll('&gt;','>')}</div>`;}
+const details=(title,body)=>`<details><summary>${title}</summary>${body}</details>`;
+let mode='image',current=structuredClone(presets[0]),answer=null,report=null;
+const options={image:[['determined','Eindeutig berechenbar'],['free','Nicht eindeutig bestimmt'],['none','Keine solche lineare Abbildung']],map:[['unique','Genau eine'],['many','Mehrere'],['none','Keine']],compatible:[['yes','Ja, die Bilder passen zusammen'],['no','Nein, das ist unmöglich']]};
+function correct(){return mode==='compatible'?(report.compatible?'yes':'no'):!report.compatible?'none':mode==='map'?(report.unique?'unique':'many'):(report.span.ok?'determined':'free');}
+function syncInputs(){ $('#n').value=String(report.n);$('#m').value=String(report.m);$('#vectors').value=current.vs.map(v=>v.join(' ')).join('\n');$('#images').value=current.ws.map(v=>v.join(' ')).join('\n');$('#target').value=current.x.join(' ');$('#inputError').textContent=''; }
+function render(){report=analyse(current.vs,current.ws,current.x);answer=null;$('#result').hidden=true;$('#result').innerHTML='';$('#level').textContent=current.hint||'Eigene Angaben';$('#taskTitle').textContent=mode==='image'?'Lässt sich dieses Bild berechnen?':mode==='map'?'Wie viel ist von T schon festgelegt?':'Gibt es eine passende lineare Abbildung?';$('#intro').innerHTML=`Für eine lineare Abbildung <span class="math">T: ℝ${report.n===1?'':`<sup>${report.n}</sup>`} → ℝ${report.m===1?'':`<sup>${report.m}</sup>`}</span> sind folgende Bilder vorgegeben:`;
+ $('#givens').innerHTML=report.vs.map((v,i)=>`<div class="given math"><span>${vi(i)} = ${vec(v)}</span><span>→</span><span>${ti(i)} = ${vec(report.ws[i])}</span></div>`).join('');
+ $('#question').innerHTML=mode==='image'?`Was kannst du über <span class="math">T(x)</span> sagen, wenn <span class="math">x = ${vec(report.x)}</span> ist?`:mode==='map'?`Wie viele lineare Abbildungen <span class="math">T: ℝ<sup>${report.n}</sup> → ℝ${report.m===1?'':`<sup>${report.m}</sup>`}</span> erfüllen alle Angaben?`:'Können alle vorgegebenen Bilder zu derselben linearen Abbildung gehören?';
+ $('#answers').innerHTML=options[mode].map(([id,label])=>`<button data-answer="${id}">${label}</button>`).join('');document.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>respond(b.dataset.answer));document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));syncInputs();}
+function spanExplanation(){const r=report;if(!r.compatible)return '';
+ if(r.span.ok)return `<p>Wir suchen Koeffizienten, die <span class="math">x</span> aus den gegebenen Vektoren zusammensetzen:</p><div class="mathblock math">x = ${combo(r.span.x,vi)}.</div><p>Weil T linear ist, benutzen wir für die Bilder <strong>dieselben Koeffizienten</strong>:</p><div class="mathblock math">T(x) = ${combo(r.span.x,ti)}.</div>${dotExplain(r.span.x,r.ws)}<div class="calculation math">= ${vec(r.image)}.</div><p>${r.independent?'Die gegebenen Vektoren sind unabhängig; diese Koeffizienten sind eindeutig.':'Die gegebenen Vektoren sind abhängig. Es kann mehrere Darstellungen geben, aber die passenden Bilder liefern immer denselben Wert T(x).'}</p>`;
+ return `<p>Die Gleichung <span class="math">${Array.from({length:r.k},(_,i)=>`c<sub>${i+1}</sub> ${vi(i)}`).join(' + ')} = x</span> hat keine Lösung. Also liegt x nicht im Spann der gegebenen Vektoren.</p><p>Damit ist sein Bild durch diese Angaben <strong>nicht festgelegt</strong>. Das bedeutet nicht, dass es kein Bild gibt: Verschiedene passende lineare Abbildungen können x auf verschiedene Vektoren schicken.</p>`;}
+function gauss(){const r=report;return `<p>Die Spalten sind ${r.vs.map((_,i)=>vi(i)).join(', ')}. Rechts steht x. Wir lösen nach den Koeffizienten.</p>${r.span.steps.map(s=>`<div class="gauss-step"><p>${esc(s.label)}</p><div class="mathblock">${mat(s.a,true)}</div></div>`).join('')}<p>${r.span.ok?'Die Gleichung ist lösbar. Freie Koeffizienten wurden für eine mögliche Darstellung auf 0 gesetzt.':'Eine Zeile hat links nur Nullen und rechts eine Zahl ungleich 0. Das ist ein Widerspruch.'}</p>`;}
+function consistency(){const r=report;if(!r.compatible)return `<p>Zwischen den Ausgangsvektoren besteht die Beziehung</p><div class="mathblock math">${combo(r.bad,vi)} = ${vec(Array.from({length:r.n},Z))}.</div><p>Eine lineare Abbildung müsste dieselbe Beziehung zwischen ihren Bildern erhalten. Doch hier ist</p><div class="mathblock math">${combo(r.bad,ti)} = ${vec(r.badImage)} ≠ ${vec(Array.from({length:r.m},Z))}.</div><p>Deshalb gibt es <strong>keine</strong> lineare Abbildung mit allen diesen Bildern.</p>`;
+ const first=r.independent?`<p>Die ${r.k} gegebenen Vektoren sind linear unabhängig. Auf einer unabhängigen Liste dürfen wir Bilder frei wählen. Eine passende lineare Abbildung existiert daher.</p>`:`<p>Die Ausgangsvektoren sind linear abhängig. Ihre Bilder lassen sich also nicht beliebig vorgeben. Hier passen sie jedoch zusammen: Jede Beziehung zwischen den Ausgangsvektoren gilt auch zwischen den Bildern.</p>`;
+ const relations=r.relations.length?details('Eine Abhängigkeit nachrechnen',`<div class="mathblock math">${combo(r.relations[0],vi)} = ${vec(Array.from({length:r.n},Z))}</div><div class="mathblock math">${combo(r.relations[0],ti)} = ${vec(combine(r.ws,r.relations[0]))}</div>`):'';
+ return first+relations+`<p>Der Spann hat Dimension ${r.rank}. ${r.unique?`Er ist der ganze ℝ<sup>${r.n}</sup>. Die Angaben bestimmen daher <strong>genau eine</strong> lineare Abbildung.`:`Er ist kleiner als ℝ<sup>${r.n}</sup>. Ausserhalb dieses Spanns bleibt eine Wahl. Es gibt daher <strong>mehrere</strong> passende lineare Abbildungen.`}</p>`;}
+function matrixExplanation(){const r=report;if(!r.compatible)return '';return `<p>${r.unique?'Die Standardmatrix ist':'Eine mögliche Standardmatrix ist'}</p><div class="mathblock math">A = ${mat(r.A)}.</div><p>Für jede gegebene Spalte gilt <span class="math">A${vi(0)} = ${ti(0)}</span>${r.k>1?', und entsprechend für die übrigen Vektoren':''}. Die Formel für diese Abbildung lautet:</p>${formula(r.A)}<p>${r.unique?'Beachte: Die Spalten von A sind T(e₁), T(e₂), … . Vorgegebene Bilder einer anderen Basis können wir nicht einfach als Spalten einsetzen.':'Diese Formel ist eine mögliche Fortsetzung auf den ganzen Ausgangsraum. Sie ist durch die Angaben nicht eindeutig vorgeschrieben.'}</p>`;}
+function twoMaps(){const r=report;return `<p>Hier sind zwei Standardmatrizen, die alle vorgegebenen Bilder erfüllen:</p><div class="calculation math">A₁ = ${mat(r.A)} <span>und</span> A₂ = ${mat(r.A2)}.</div><p>Sie unterscheiden sich jedoch beim gesuchten Vektor:</p><div class="calculation math">A₁x = ${vec(r.image1)}, <span>aber</span> A₂x = ${vec(r.image2)}.</div><p>Für alle gegebenen Vektoren gilt dagegen <span class="math">A₁vᵢ = A₂vᵢ = T(vᵢ)</span>. Das zeigt ausdrücklich, warum die Angaben das Bild von x nicht festlegen.</p>`;}
+function respond(choice){answer=choice;const r=report,c=correct(),right=choice===c;document.querySelectorAll('[data-answer]').forEach(b=>b.classList.toggle('selected',b.dataset.answer===choice));let heading=choice==='unsure'?'Schauen wir gemeinsam hin.':right?'Genau.':'Prüfe die Angaben noch einmal.';let message=!r.compatible?'Die vorgegebenen Bilder passen nicht zu einer linearen Abbildung.':mode==='map'?(r.unique?'Die Bilder bestimmen genau eine lineare Abbildung.':'Es gibt mehrere passende lineare Abbildungen.'):mode==='compatible'?'Ja, eine passende lineare Abbildung existiert.':r.span.ok?'Das Bild ist eindeutig berechenbar, weil x im Spann liegt.':'Das Bild ist durch diese Angaben nicht eindeutig bestimmt.';
+ let body=`<div class="feedback ${!right&&choice!=='unsure'?'wrong':''}"><strong>${heading}</strong>${message}</div>`;
+ if(r.compatible&&r.span.ok&&mode==='image')body+=`<div class="answer-input"><label>Berechne T(x) selbst (Einträge mit Leerzeichen)<input id="imageAnswer" placeholder="z. B. 2 7" spellcheck="false"></label><button id="checkImage">Prüfen</button></div><p id="numberFeedback" class="number-feedback" aria-live="polite"></p>`;
+ let parts=[];
+ if(mode==='image'&&r.compatible){parts.push(details(r.span.ok?'1. Mit denselben Koeffizienten rechnen':'1. Warum reichen die Angaben nicht?',spanExplanation()));parts.push(details('2. Die Koeffizienten mit Gauss finden',gauss()));parts.push(details(r.span.ok?'3. Eine passende Matrix und die allgemeine Formel':'3. Zwei passende Abbildungen vergleichen',r.span.ok?matrixExplanation():twoMaps()));if(!r.independent)parts.push(details('Warum passen die vorgegebenen Bilder zusammen?',consistency()));}
+ else {parts.push(details('1. Die Angaben verstehen',consistency()));if(r.compatible){parts.push(details('2. Matrix und allgemeine Formel',matrixExplanation()));if(!r.span.ok)parts.push(details('3. Wo die Angaben noch eine Wahl lassen',twoMaps()));else parts.push(details('3. Ein konkretes Bild berechnen',spanExplanation()));}}
+ if(!r.compatible&&mode==='image')parts=[details('Warum kann keine solche Abbildung existieren?',consistency())];
+ body+=`<div class="details-list">${parts.join('')}</div>`;$('#result').innerHTML=body;$('#result').hidden=false;const check=$('#checkImage');if(check)check.onclick=()=>{try{let v=parseVector($('#imageAnswer').value,r.m);let yes=v.every((x,i)=>x.eq(r.image[i]));$('#numberFeedback').textContent=yes?'Richtig. Du hast dieselben Koeffizienten auf die Bilder angewendet.':'Das passt noch nicht. Öffne bei Bedarf den ersten Rechenschritt.';}catch(e){$('#numberFeedback').textContent=e.message;}};}
+function parseVector(text,n){let parts=text.trim().split(/[\s,;]+/);if(parts.length!==n||parts.some(x=>!x))throw Error(`Dieser Vektor braucht genau ${n} Einträge.`);return parts.map(q);}
+function parseList(text,n){const rows=text.trim().split(/\n/).filter(x=>x.trim());if(rows.length<1||rows.length>6)throw Error('Bitte 1 bis 6 Vektoren eingeben.');return rows.map(x=>parseVector(x,n));}
+function apply(){try{let n=Number($('#n').value),m=Number($('#m').value),vs=parseList($('#vectors').value,n),ws=parseList($('#images').value,m),x=parseVector($('#target').value,n);if(vs.length!==ws.length)throw Error('Zu jedem Vektor gehört genau ein Bild. Die beiden Listen müssen gleich lang sein.');current={id:'custom',title:'Eigene Angaben',hint:'Eigene Angaben',vs,ws,x};analyse(vs,ws,x);$('#preset').value='custom';render();$('.editor').open=false;}catch(e){$('#inputError').textContent=e.message;}}
+const ri=(a,b)=>a+Math.floor(Math.random()*(b-a+1));
+function random(){const base=presets.find(p=>p.id===current.id)||presets[2];const n=base.vs[0].length,m=base.ws[0].length;let R=Array.from({length:n},(_,i)=>Array.from({length:n},(_,j)=>i===j?1:0));let i=ri(0,n-1),j=(i+ri(1,n-1))%n;R[i][j]=ri(0,1)?1:-1;let vs=base.vs.map(v=>mv(R,v)),x=mv(R,base.x);let A=Array.from({length:m},()=>Array.from({length:n},()=>ri(-2,2)));let ws=vs.map(v=>mv(A,v));if(base.id==='widerspruch')ws[1][0]=ws[1][0].add(O());current={...base,hint:'Neue Zahlen · gleiche Idee',vs,ws,x};render();}
+$('#preset').innerHTML=presets.map(p=>`<option value="${p.id}">${p.title}</option>`).join('')+'<option value="custom" disabled>Eigene Angaben</option>';
+$('#preset').onchange=()=>{let p=presets.find(p=>p.id===$('#preset').value);if(p){current=structuredClone(p);render();}};
+$('#random').onclick=random;$('#apply').onclick=apply;$('#unsure').onclick=()=>respond('unsure');document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;render();});
+const params=new URLSearchParams(location.search),p=presets.find(p=>p.id===params.get('beispiel'));if(p)current=structuredClone(p);if(options[params.get('modus')])mode=params.get('modus');$('#preset').value=current.id;render();
+window.BilderApplet={presets,get current(){return current;},get report(){return report;},get mode(){return mode;},correct,render,respond,random};
+})();
+
+</script></body></html>
