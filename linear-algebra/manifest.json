@@ -1,22 +1,14 @@
 {
   "filename": "LA-BAUG-Skript.pdf",
-  "snapshot_filename": "LA-BAUG-2026-11-04.pdf",
-  "title": "Lineare Algebra für D-BAUG — Kapitel 1–5 und Abschnitt 6.1",
+  "snapshot_filename": "LA-BAUG-2026-11-09.pdf",
+  "title": "Lineare Algebra für D-BAUG — Kapitel 1–6",
   "author": "Menny Akka Ginosar",
-  "updated": "2026-11-04",
-  "sha256": "e5ab364ea887833f444e0924962bbe2cb9d31c98c21762eb45674b44c68d5110",
-  "git_blob_sha": "6ce7d16ff1dc8efeaea60c4ff0f7cd32aa2d5a29",
-  "bytes": 3214445,
-  "pdf_pages": 135,
+  "updated": "2026-11-09",
+  "sha256": "f555337406c6bce47b903c5567e8ddb2ec6a355c8112ed09f35186ef74b03e44",
+  "git_blob_sha": "1c7d6a2f04a87f4668dea4d2edef1a997c261a89",
+  "bytes": 3284551,
+  "pdf_pages": 152,
   "section_pages": {
-    "appendix.A": {
-      "pdf_page": 131,
-      "printed_page": "128"
-    },
-    "appendix.B": {
-      "pdf_page": 133,
-      "printed_page": "130"
-    },
     "chapter.1": {
       "pdf_page": 4,
       "printed_page": "1"
@@ -37,10 +29,6 @@
       "pdf_page": 87,
       "printed_page": "84"
     },
-    "chapter.6": {
-      "pdf_page": 123,
-      "printed_page": "120"
-    },
     "section.5.1": {
       "pdf_page": 87,
       "printed_page": "84"
@@ -58,16 +46,48 @@
       "printed_page": "104"
     },
     "section.5.5": {
-      "pdf_page": 118,
-      "printed_page": "115"
+      "pdf_page": 117,
+      "printed_page": "114"
+    },
+    "section.5.6": {
+      "pdf_page": 122,
+      "printed_page": "119"
+    },
+    "chapter.6": {
+      "pdf_page": 125,
+      "printed_page": "122"
     },
     "section.6.1": {
-      "pdf_page": 123,
-      "printed_page": "120"
+      "pdf_page": 125,
+      "printed_page": "122"
+    },
+    "section.6.2": {
+      "pdf_page": 129,
+      "printed_page": "126"
+    },
+    "section.6.3": {
+      "pdf_page": 134,
+      "printed_page": "131"
+    },
+    "section.6.4": {
+      "pdf_page": 141,
+      "printed_page": "138"
+    },
+    "section.6.5": {
+      "pdf_page": 144,
+      "printed_page": "141"
+    },
+    "appendix.A": {
+      "pdf_page": 146,
+      "printed_page": "143"
+    },
+    "appendix.B": {
+      "pdf_page": 149,
+      "printed_page": "146"
     },
     "changelog": {
-      "pdf_page": 135,
-      "printed_page": "132"
+      "pdf_page": 152,
+      "printed_page": "149"
     }
   }
 }
