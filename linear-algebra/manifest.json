@@ -1,12 +1,12 @@
 {
   "filename": "LA-BAUG-Skript.pdf",
-  "snapshot_filename": "LA-BAUG-2026-11-18.pdf",
+  "snapshot_filename": "LA-BAUG-2026-11-19.pdf",
   "title": "Lineare Algebra für D-BAUG — Kapitel 1–7 (bis Abschnitt 7.3.1)",
   "author": "Menny Akka Ginosar",
-  "updated": "2026-11-18",
-  "sha256": "d97a6a678935a8ee3dc6aa0848cec299c375cb10ec7654b141be5ea3e84ee14b",
-  "git_blob_sha": "ce4ebb1637b7ce630962c8967d56f6d9037710f2",
-  "bytes": 4836169,
+  "updated": "2026-11-19",
+  "sha256": "00690717ffb10560ed0bc920bf2337086b6c116e394ad353b4a426ad111b74a7",
+  "git_blob_sha": "d8d72b8156b230db233b35a53dd885385f5d5078",
+  "bytes": 4836403,
   "pdf_pages": 163,
   "section_pages": {
     "chapter.1": {
